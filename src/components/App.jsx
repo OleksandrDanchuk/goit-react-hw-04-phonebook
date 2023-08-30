@@ -13,7 +13,7 @@ export const App = () => {
   useEffect(() => {
     const stateLocalStorage = getLocalStorage(KEY_LOCAL_CONTACTS);
     if (stateLocalStorage) {
-      setContacts({ stateLocalStorage });
+      setContacts(stateLocalStorage);
     }
   }, []);
 
